@@ -15,7 +15,8 @@ body{
 }
 
 .calculator {
-    flex-basis: 60%;
+    max-width: 1100px;
+    flex-basis: 0 0 60%;
     background: chocolate;
     padding: 1rem;
 }
@@ -102,3 +103,29 @@ body{
     padding: 1rem;
     font-size: 5rem;
 }
+
+@media(max-width: 768px ){
+   .calculator {
+       margin: 0 2rem;
+   }
+   .screen{
+       width: 100%;
+       font-size: 2rem;
+       line-height: 0.70rem;
+   }
+   .btn{
+       font-size: 1rem;
+       padding: 0.75rem;
+   }
+   .screen{
+       height: 12vh;
+   }
+   .btn-delete{
+       font-size: 1rem;
+   }
+   .btn-equal-big{
+       font-size: 2rem;
+       padding: 0.75rem;
+   }
+}
+
